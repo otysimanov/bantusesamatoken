@@ -20,6 +20,10 @@ app.config['MAX_CONTENT_LENGTH'] = 2 * 1024 * 1024
 def index():
     return render_template('index.html')
 
+@app.route('/coming-soon')
+def coming_soon():
+    return render_template('coming-soon.html')
+
 app.register_blueprint(configapp)
 
 if __name__ == "__main__":
